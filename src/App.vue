@@ -2,11 +2,13 @@
    <HeaderView/>
   <router-view/>
   <SectionHero/>
+  <SectionServices/>
 </template>
 
 <script setup lang="ts">
   import HeaderView from "./components/HeaderView.vue"
   import SectionHero from "./components/SectionHero.vue";
+  import SectionServices from "./components/SectionServices.vue";
 </script>
 
 <style>
