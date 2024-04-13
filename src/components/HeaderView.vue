@@ -1,6 +1,6 @@
 <template>
     <header>
-        <h1>Alifreza<span>.</span></h1>
+        <h2>Alifreza<span>.</span></h2>
         <nav>
             <RouterLink to="/">Home</RouterLink>
             <RouterLink to="/">Services</RouterLink>
@@ -17,8 +17,6 @@ import { RouterLink } from 'vue-router';
 </script>
   
 <style scoped>
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
-@import "@/assets/colors.css";
 
 header {
   position: fixed;
@@ -28,11 +26,9 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  font-family: "Inter", sans-serif;
-  background-color: var(--dark);
 }
 
-h1 {
+h2 {
   color: var(--white);
   font-size: 24px;
   line-height: 28px;
