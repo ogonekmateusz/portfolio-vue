@@ -32,23 +32,25 @@ interface service{
   description:string,
 }
 
-const services:service[]=[
-{
-  title:"Product Designer",
-  imgSrc:"../assets/icon-1.png",
-  description:"I offer innovative and attention-grabbing product design services. From initial ideation to implementation"
-},
-{
-  title:"Frontend develop",
-  imgSrc:"../assets/icon-2.png",
-  description:"Specialize in responsive and interactive front-end development. With a deep understanding of HTML, CSS, and JS."
-},
-{
-  title:"Brand strategy",
-  imgSrc:"../assets/icon-3.pmg",
-  description:"I help design strong and captivating brand strategies. Through thorough research and market analysis."
-}
-]
+const services: service[] = [
+  {
+    title: "Product Designer",
+    imgSrc: "./assets/icon-1.png",
+    description: "I offer innovative and attention-grabbing product design services. From initial ideation to implementation"
+  },
+  {
+    title: "Frontend develop",
+    imgSrc: "./assets/icon-2.png",
+    description: "Specialize in responsive and interactive front-end development. With a deep understanding of HTML, CSS, and JS."
+  },
+  {
+    title: "Brand strategy",
+    imgSrc: "./assets/icon-3.png",
+    description: "I help design strong and captivating brand strategies. Through thorough research and market analysis."
+  }
+];
+
+
 
 </script>
 <style>
@@ -65,6 +67,7 @@ const services:service[]=[
     width: 100%;
     justify-content: space-around;
     display: flex;
+    align-items: center;
     .services-header-right-block{
       .right-block-wrapper{
         .line{

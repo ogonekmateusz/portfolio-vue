@@ -1,11 +1,12 @@
 <template>
-  <div class="box">
-      <img :src="require('@/assets/icon-1.png')" alt="img">
+    <div class="box">
+      <img :src="imgSrc" alt="img">
       <h3>{{ title }}</h3>
       <p>{{ description }}</p>
       <div class="greenLine"></div>
-  </div>
-</template>
+    </div>
+  </template>
+  
   
   <script lang="ts" setup>
   defineProps<{
@@ -17,6 +18,7 @@
   
   <style scoped>
 .box {
+    box-sizing: border-box;
     margin: 46px;
     background-color:var(--lightDark) ;
     padding: 68px 25px;
@@ -41,6 +43,7 @@
         bottom: 0;
         width: 100%;
         height: 6px;
+        left:0;
       }
 }
 
