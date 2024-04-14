@@ -1,15 +1,11 @@
 <template>
-    <section>
-      <h2>7+ years experience working</h2>
-      <section class="cardServices">
-        <div class="box">
-            <img :src="require('@/assets/icon-1.png')" alt="img">
-            <h3>{{ title }}</h3>
-            <p>{{ description }}</p>
-        </div>
-      </section>
-    </section>
-  </template>
+  <div class="box">
+      <img :src="require('@/assets/icon-1.png')" alt="img">
+      <h3>{{ title }}</h3>
+      <p>{{ description }}</p>
+      <div class="greenLine"></div>
+  </div>
+</template>
   
   <script lang="ts" setup>
   defineProps<{
@@ -20,35 +16,34 @@
   </script>
   
   <style scoped>
-
-    section {
-        padding: 80px 100px;
-    }
-  
-    h2 {
-        color: var(--white);
-        font-weight: bold;
-        font-size: 46px;
-        line-height: 56px;
-    }
-
-    .box {
-        margin: 46px;
-        background-color:var(--lightDark) ;
-        padding: 68px 25px;
-    }
-
-    .box h3 {
+.box {
+    margin: 46px;
+    background-color:var(--lightDark) ;
+    padding: 68px 25px;
+    width: 360px;
+    height: 336px;
+    position: relative;
+      h3 {
         line-height: 32px;
         font-size: 26px;
         font-weight: bold;
         color: var(--white);
         margin: 18px 0;
-    }
-    .box p {
+      }
+      p {
         font-size: 16px;
         line-height: auto;
         color: var(--gray);
-    }
+      }
+      .greenLine{
+        background-color: var(--primary);
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 6px;
+      }
+}
+
+
   </style>
   
