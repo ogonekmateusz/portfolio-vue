@@ -1,8 +1,7 @@
 <template>
    <HeaderView/>
   <router-view/>
-  <SectionHero/>
-  <SectionServices/>
+
 </template>
 
 <script setup lang="ts">
