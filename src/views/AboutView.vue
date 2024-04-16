@@ -1,3 +1,3 @@
 <template>
- 
+ dupa
 </template>
