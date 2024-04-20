@@ -1,6 +1,6 @@
 <template>
     <div class="box">
-      <img :src="imgSrc" alt="img">
+      <img :src="require(`../../assets/${imgSrc}`)" alt="img">
       <h3>{{ title }}</h3>
       <p>{{ description }}</p>
       <div class="greenLine"></div>

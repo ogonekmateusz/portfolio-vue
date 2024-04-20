@@ -1,9 +1,8 @@
 <template>
     <div class="box">
       <!-- <img :src="imgSrc" alt=""> zjebane propsy -->
-      <img src="../assets/alana.png" alt="" >
+      <img :src="require(`../../assets/${imgSrc}`)" alt="Work" :class="imgSrc">
       <h3>{{ title }}</h3>
-        
       <div class="linkWrap">
         <a class="link" :href="href">See project
           <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">

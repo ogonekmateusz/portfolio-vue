@@ -13,7 +13,6 @@
           <p>Discover the best services I offer, designed to ensure the success of your project.</p>
         </div>
       </div>
-      
       <div class="cardServices">
         <SectionServices 
           v-for="service in services" 
@@ -24,7 +23,6 @@
         />
       </div>
     </section>
-    
     <section class="works">
       <div class="top-block">
         <hr class="line" />
@@ -52,9 +50,9 @@
 </template>
 
 <script setup lang="ts">
-import SectionHero from "../components/SectionHero.vue";
-import SectionServices from "../components/SectionServices.vue";
-import SectionWork from "@/components/SectionWork.vue";
+import SectionHero from "../components/HomeViewComponents/SectionHero.vue";
+import SectionServices from "../components/HomeViewComponents/SectionServices.vue";
+import SectionWork from "@/components/HomeViewComponents/SectionWork.vue";
 
 interface service {
   title: string;
@@ -71,17 +69,17 @@ interface work {
 const services: service[] = [
   {
     title: "Product Designer",
-    imgSrc: "./assets/icon-1.png",
+    imgSrc: "icon-1.png",
     description: "I offer innovative and attention-grabbing product design services. From initial ideation to implementation"
   },
   {
     title: "Frontend develop",
-    imgSrc: "./assets/icon-2.png",
+    imgSrc: "icon-2.png",
     description: "Specialize in responsive and interactive front-end development. With a deep understanding of HTML, CSS, and JS."
   },
   {
     title: "Brand strategy",
-    imgSrc: "./assets/icon-3.png",
+    imgSrc: "icon-3.png",
     description: "I help design strong and captivating brand strategies. Through thorough research and market analysis."
   }
 ];
@@ -89,22 +87,22 @@ const services: service[] = [
 const works: work[] = [
   {
     title: "Alana - live data app",
-    imgSrc: "./assets/alana.png",
+    imgSrc: "alana.png",
     href: "/",
   },
   {
     title: "Wohoo - weather app",
-    imgSrc: "./assets/wohoo.png",
+    imgSrc: "wohoo.png",
     href: "/",
   },
   {
     title: "Pagee - real estate UI kit",
-    imgSrc: "./assets/page.png",
+    imgSrc: "pagee.png",
     href: "/",
   },
   {
     title: "Keikoko - agency web",
-    imgSrc: "./assets/keikoko.png",
+    imgSrc: "keikoko.png",
     href: "/",
   }
 ];
