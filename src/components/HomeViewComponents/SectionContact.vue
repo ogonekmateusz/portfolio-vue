@@ -15,6 +15,7 @@
 
 <script setup lang="ts">
 import EmailMe from "../EmailMe.vue";
+
 </script>
 
 <style scoped>
@@ -29,6 +30,9 @@ import EmailMe from "../EmailMe.vue";
     .ideas-block{
         width: 81%;
         display: flex;
+        justify-content: space-around;
+        width: 100%;
+        align-items: center;
         .ideas-block-wrapper{
             width:40% ;
             display: flex;
@@ -37,6 +41,7 @@ import EmailMe from "../EmailMe.vue";
         h1{
             color:white;
             font-size: 38px;
+            margin: 0;
         }
         p{
             font-size: 16px; 
