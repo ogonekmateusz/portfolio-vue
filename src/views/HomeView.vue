@@ -46,14 +46,16 @@
         />
       </div>
     </section>
-  
+    <section class="contact">
+      <SectionContact/>
+    </section>
 </template>
 
 <script setup lang="ts">
 import SectionHero from "../components/HomeViewComponents/SectionHero.vue";
 import SectionServices from "../components/HomeViewComponents/SectionServices.vue";
 import SectionWork from "@/components/HomeViewComponents/SectionWork.vue";
-
+import SectionContact from "@/components/HomeViewComponents/SectionContact.vue";
 interface service {
   title: string;
   imgSrc: string;
@@ -210,5 +212,10 @@ h2 {
     justify-content: space-around;
     align-items: center;
   }
+}
+.contact{
+    width: 100%;
+    height: 213px;
+
 }
 </style>
