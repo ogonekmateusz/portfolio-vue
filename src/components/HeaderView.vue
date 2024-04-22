@@ -1,88 +1,50 @@
 <template>
-    <header>
-        <h2>Alifreza<span>.</span></h2>
-        <nav>
-            <RouterLink to="/">Home</RouterLink>
-            <RouterLink to="/">Services</RouterLink>
-            <RouterLink to="/">Work</RouterLink>
-            <RouterLink to="/">About us</RouterLink>
-            <RouterLink to="/">Blog</RouterLink>
-            <RouterLink to="/">Contact</RouterLink>
-        </nav>
-    </header>
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark" aria-label="Fourth navbar example">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Expand at md</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExample04">
+        <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+        </ul>
+      
+      </div>
+    </div>
+  </nav>
 </template>
   
 <script lang="ts" setup>
+import 'bootstrap/dist/css/bootstrap.css';
+import 'bootstrap/dist/js/bootstrap.bundle';
 import { RouterLink } from 'vue-router'; 
 </script>
   
 <style scoped>
 
-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  z-index: 1000;
-  background-color: var(--dark);
+body {
+  padding-bottom: 20px;
 }
 
-h2 {
-  color: var(--white);
-  font-size: 24px;
-  line-height: 28px;
-  font-weight: bold;
-  margin-left: 123px;
-}
-
-nav {
-  margin-right: 123px;
-}
-
-a {
-  position: relative;
-  color: var(--white);
-  text-decoration: none;
-  font-size: 14px;
-  line-height: auto;
-  font-weight: bold;
-  padding: 10px 15px;
-  transition: color 0.3s ease-in-out;
-  margin: 0 5px;
-}
-
-a:not(:last-child)::after{
-  content: "";
-  position: absolute;
-  bottom: -2px;
-  left: 0;
-  width: 0%;
-  height: 2px;
-  background-color: var(--primary);
-  transform-origin: right;
-  transition: width 0.3s ease-in-out;
-}
-
-a:not(:last-child):hover::after{
-  width: 100%;
-}
-
-nav a:last-child {
-  border: 1px solid var(--primary);
-  margin-left: 20px;
-}
-
-nav a:last-child:hover {
-  background-color: var(--primary);
-  border-color: var(--dark);
-  color: var(--dark);
-}
-
-span {
-  color: var(--primary);
+.navbar {
+  margin-bottom: 20px;
 }
 </style>
-  
