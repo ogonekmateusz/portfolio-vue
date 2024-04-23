@@ -1,11 +1,15 @@
 <template>
 
-<button class="button">Email me</button>
+<button class="btn btn-primary btn-lg px-4 me-md-2">Email me</button>
 
 </template>
+<script setup lang="ts">
+import 'bootstrap/dist/css/bootstrap.css';
+import 'bootstrap/dist/js/bootstrap.bundle';
 
+</script>
 <style scoped>
-.button {
+.btn {
     display: inline-block;
     padding: 18px 28px;
     color: #fff;
@@ -17,9 +21,10 @@
     font-weight: bold;
     border: none;
     border: 1px solid var(--primary);
+    border-radius: 0;
 }
 
-.button:after {
+.btn:after {
     content: "";
     position: absolute;
     bottom: 0;
@@ -30,7 +35,7 @@
     z-index: -2;
 }
 
-.button:before {
+.btn:before {
     content: "";
     position: absolute;
     bottom: 0;
@@ -42,11 +47,11 @@
     z-index: -1;
 }
 
-.button:hover {
+.btn:hover {
     color: var(--white);
 }
 
-.button:hover:before {
+.btn:hover:before {
     width: 100%;
 }
 </style>
