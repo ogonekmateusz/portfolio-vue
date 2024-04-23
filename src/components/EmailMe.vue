@@ -10,8 +10,9 @@ import 'bootstrap/dist/js/bootstrap.bundle';
 </script>
 <style scoped>
 .btn {
+    margin-top: 5px;
     display: inline-block;
-    padding: 18px 28px;
+    padding: 0.8rem 1.3rem;
     color: #fff;
     font-size: 18px;
     transition: all 0.3s;
