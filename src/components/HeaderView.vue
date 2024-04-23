@@ -1,7 +1,7 @@
 <template>
-  <nav class="navbar navbar-expand-md navbar-dark bg-dark" aria-label="Fourth navbar example">
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark p-3" aria-label="Fourth navbar example">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">Expand at md</a>
+      <a class="navbar-brand" href="#">Alifreza<span>.</span> </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -9,24 +9,24 @@
       <div class="collapse navbar-collapse" id="navbarsExample04">
         <ul class="navbar-nav ms-auto mb-2 mb-md-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <RouterLink class="nav-link" to="/">Home</RouterLink>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
+            <RouterLink class="nav-link" to="/">Services</RouterLink>
           </li>
           <li class="nav-item">
-            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+            <RouterLink class="nav-link" to="/">Work</RouterLink>
           </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
+          <li class="nav-item">
+            <RouterLink class="nav-link" to="/">About us</RouterLink>
+          </li>
+          <li class="nav-item">
+            <RouterLink class="nav-link " to="/">Blog</RouterLink>
+          </li>
+          <li class="nav-item border ">
+            <RouterLink class="nav-link last" to="/">Contact</RouterLink>
           </li>
         </ul>
-      
       </div>
     </div>
   </nav>
@@ -40,11 +40,136 @@ import { RouterLink } from 'vue-router';
   
 <style scoped>
 
-body {
-  padding-bottom: 20px;
+@import url(/src/assets/colors.css);
+/* Styl dla nawigacji */
+.navbar {
+  background-color: var(--dark) !important; /* Ustawienie koloru tła paska nawigacji */
+  font-weight: bold;
+  width: 100%;
+  position: fixed;
+  left: 0; 
+  top: 0; 
 }
 
-.navbar {
-  margin-bottom: 20px;
+/* Styl dla marki */
+.navbar-brand {
+  font-size: 24px;
+  color: var(--white); /* Kolor tekstu marki */
+  line-height: 28px;
 }
+
+.navbar-brand span {
+  color: var(--primary); /* Kolor dodatkowego punktu w marki */
+}
+
+/* Styl dla linków nawigacyjnych */
+.nav-link {
+  position: relative;
+  color: var(--white); /* Kolor tekstu linków */
+  text-decoration: none;
+  font-size: 14px;
+  line-height: auto;
+  font-weight: bold;
+  transition: color 0.3s ease-in-out; /* Animacja zmiany koloru */
+  margin: 0 12px;
+}
+
+/* Styl dla ostatniego elementu nawigacji */
+.nav-item:last-child {
+  border-color: var(--primary) !important; /* Kolor obramowania ostatniego elementu */
+  margin-left: 20px;
+  transition: .3s ease-in-out;
+  cursor: pointer;
+}
+
+/* Styl dla pozostałych elementów nawigacji */
+.nav-item {
+  position: relative;
+}
+
+/* Animacja dla elementów nawigacyjnych */
+.nav-item::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: var(--primary);
+  transform-origin: right;
+  transition: width 0.35s ease-in-out;
+}
+
+/* Animacja dla elementów nawigacyjnych po najechaniu myszką */
+.nav-item:not(:last-child):hover::after {
+  width: 100%;
+}
+
+/* Styl dla ostatniego elementu nawigacji po najechaniu myszką */
+.nav-item:last-child:hover {
+  background-color: var(--primary) !important;
+  border-color: var(--dark) !important;
+}
+
+.last:hover {
+  color: black !important;
+}
+
+/* Media queries dla ekranów o szerokości do 768px */
+@media (max-width: 768px) {
+
+.nav-item {
+  padding: 5px 0;
+}
+
+.nav-link {
+  margin: 0;
+}
+
+.nav-item::after {
+  background-color: transparent;
+  left: 10px;
+}
+
+.nav-item:not(:last-child):hover::after {
+  width: 15%;
+}
+
+.nav-item:last-child {
+  margin: 0;
+  border: none !important;
+}
+
+.last:hover {
+  color: var(--white) !important; 
+}
+
+.navbar-nav > .nav-item:last-child:hover {
+  background-color: transparent !important; 
+  border-color: transparent !important; 
+  color: var(--white) !important;
+}
+
+.navbar-nav > .nav-item:last-child:hover::after {
+  width: 0; 
+}
+
+.last::after, .nav-item::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: var(--primary);
+  transform-origin: right;
+  transition: width 0.35s ease-in-out;
+}
+
+.last:hover::after {
+  width: 15%;
+}
+}
+
+
 </style>
