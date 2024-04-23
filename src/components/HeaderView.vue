@@ -49,6 +49,7 @@ import { RouterLink } from 'vue-router';
   position: fixed;
   left: 0; 
   top: 0; 
+  z-index: 1000;
 }
 
 /* Styl dla marki */
