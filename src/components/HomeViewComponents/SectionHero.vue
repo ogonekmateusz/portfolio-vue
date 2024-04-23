@@ -40,7 +40,7 @@ import 'bootstrap/dist/js/bootstrap.bundle';
 .display-4{
   color: white !important;
   font-weight: 800;
-  font-size: 70px;
+  font-size: 5rem;
 }
 .col-lg-10{
   color: var(--gray) !important;
