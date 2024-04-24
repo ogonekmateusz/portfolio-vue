@@ -143,8 +143,11 @@ const works: Work[] = [
   .services-header-content span {
     font-size: 1.1rem;
   }
-  .services{
+  .services-header{
     margin-left: 1.2rem;
   }
+
 }
+
+
 </style>
