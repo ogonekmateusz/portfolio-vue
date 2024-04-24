@@ -131,7 +131,7 @@ const works: Work[] = [
   color: var(--gray);
 }
 
-@media (max-width: 520px) {
+@media (max-width: 574px) {
   .services-header h2 {
     font-size: 1.5rem;
   }
@@ -142,6 +142,9 @@ const works: Work[] = [
 
   .services-header-content span {
     font-size: 1.1rem;
+  }
+  .row{
+    margin-left: 1.2rem;
   }
 }
 </style>
