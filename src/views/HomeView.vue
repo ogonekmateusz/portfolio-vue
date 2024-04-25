@@ -206,6 +206,7 @@ const works: Work[] = [
   .services-header{
     margin-left: 1.2rem;
   }
+<<<<<<< HEAD
  
 }
 @media (max-width: 991px) {
@@ -234,5 +235,10 @@ const works: Work[] = [
   flex-wrap: wrap;
   width: 100%;
   justify-content: center;
+=======
+
+>>>>>>> e99d228a74988964e517a1ef9971346d6fc26fe5
 }
+
+
 </style>
