@@ -1,36 +1,39 @@
 <template>
-    <div class="box">
-      <!-- <img :src="imgSrc" alt=""> zjebane propsy -->
-      <img :src="require(`../../assets/${imgSrc}`)" alt="Work" :class="imgSrc">
-      <h3>{{ title }}</h3>
-      <div class="linkWrap">
-        <a class="link" :href="href">See project
-          <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
-            <g fill="none" stroke="var(--primary)" stroke-width="1.5" stroke-linejoin="round" stroke-miterlimit="10">
-              <circle class="arrow-icon--circle" cx="16" cy="16" r="15.12"></circle>
-              <path class="arrow-icon--arrow" d="M16.14 9.93L22.21 16l-6.07 6.07M8.23 16h13.98"></path>
-            </g>
-          </svg>
-        </a>
-      </div>
-      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-        <div class="col">
-          <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-            <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                </div>
-                <small class="text-body-secondary">9 mins</small>
+  <!-- <img :src="require(`../../assets/${imgSrc}`)" alt="Work" :class="imgSrc">
+  <h3>{{ title }}</h3>
+  <div class="linkWrap">
+    <a class="link" :href="href">See project
+      <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+        <g fill="none" stroke="var(--primary)" stroke-width="1.5" stroke-linejoin="round" stroke-miterlimit="10">
+          <circle class="arrow-icon--circle" cx="16" cy="16" r="15.12"></circle>
+          <path class="arrow-icon--arrow" d="M16.14 9.93L22.21 16l-6.07 6.07M8.23 16h13.98"></path>
+        </g>
+      </svg>
+    </a>
+  </div> -->
+
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        
+        <div class="card-body">
+          <img :src="require(`../../assets/${imgSrc}`)" alt="Work" :class="imgSrc">
+
+          <h3 class="card-text">
+            {{title}}
+          </h3>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <a class="link" :href="href">See project
+                  <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+                    <g fill="none" stroke="var(--primary)" stroke-width="1.5" stroke-linejoin="round" stroke-miterlimit="10">
+                      <circle class="arrow-icon--circle" cx="16" cy="16" r="15.12"></circle>
+                      <path class="arrow-icon--arrow" d="M16.14 9.93L22.21 16l-6.07 6.07M8.23 16h13.98"></path>
+                    </g>
+                  </svg>
+                </a>
               </div>
-            </div>
-          </div>
-        </div> 
+        </div>
       </div>
-    </div>
+</div>
   </template>
   
   <script setup lang="ts">
@@ -42,9 +45,9 @@
   </script>
   
   <style scoped>
-  .box {
-    margin-top: 48px;
-    width: 40%;
+  .row {
+    margin: 40px;
+    width:30% !important;
     
     img {
       width: 100%;
@@ -96,5 +99,15 @@
       }
     }
   }
+  .card{
+    background-color: transparent;
+  }
+  @media (max-width: 991px) {
+    .row {
+      margin: 40px;
+      width:80% !important;
+    }
+  }
+
   </style>
   

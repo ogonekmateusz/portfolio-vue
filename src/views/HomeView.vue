@@ -36,9 +36,7 @@
 <section class="work">
   
   <div class="album py-5 bg-body-tertiary">
-    <div class="container">
-      
-      <div class="container container-work">
+    <div class="container container-work">
         <div class="row">
           <div class="col-lg-6">
             <div class="services-header">
@@ -59,8 +57,17 @@
           </div>
         </div>
       </div>
-
-    </div>
+    <div class="container-block">
+        <SectionWork
+          v-for="work in works"
+          :key="work"
+          :title="work.title"
+          :imgSrc="work.imgSrc"
+          :description="work.href"
+        >
+        </SectionWork>
+        
+      </div>
   </div>
 </section>
   <!-- koniec sekcji services -->
@@ -196,7 +203,7 @@ const works: Work[] = [
   .services-header-content span {
     font-size: 1.1rem;
   }
-  .services{
+  .services-header{
     margin-left: 1.2rem;
   }
  
@@ -211,9 +218,21 @@ const works: Work[] = [
       order: 1;
     }
   }
+  .container-block{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
 }
 .album{
   background-color: var(--lightDark) !important;
-}
 
+}
+.container-block{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+}
 </style>
