@@ -33,6 +33,36 @@
     </div>
     <!-- cards end -->
   </section>
+<section class="work">
+  
+  <div class="album py-5 bg-body-tertiary">
+    <div class="container">
+      
+      <div class="container container-work">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="services-header">
+              <div class="services-header-content">
+                <hr class="line"> <span>Recent work</span> 
+              </div>
+              <h2>Some of my favorite<br> projects.</h2>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="services-header">
+            
+              <div class="services-header-right-block">
+                <button>View All Project</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
   <!-- koniec sekcji services -->
 </template>
 
@@ -112,6 +142,29 @@ const works: Work[] = [
 .services-header-content {
   display: flex;
   align-items: center;
+  
+}
+.services-header-right-block {
+  display: flex;
+  justify-content: end;
+  button {
+    font-size: 14px;
+    background-color: transparent;
+    font-weight: bold;
+
+    padding: 10px 16px;
+    border: 1px solid var(--primary);
+    color: white;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+    margin-top: 1rem;
+  }
+
+  button:hover {
+    background-color: var(--primary);
+    border-color: var(--lightDark);
+    color: var(--lightDark);
+  }
 }
 
 .services-header-content span {
@@ -146,5 +199,21 @@ const works: Work[] = [
   .services{
     margin-left: 1.2rem;
   }
+ 
 }
+@media (max-width: 991px) {
+  .services-header-right-block {
+    justify-content: start;
+  }
+  .row{
+    display: flex;
+    .services-header-content{
+      order: 1;
+    }
+  }
+}
+.album{
+  background-color: var(--lightDark) !important;
+}
+
 </style>
