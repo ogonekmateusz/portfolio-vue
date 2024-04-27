@@ -90,6 +90,7 @@
     }
     
     &:hover {
+      cursor: pointer;
       .arrow-icon {
         transform: translate3d(5px, 0, 0);
       }
