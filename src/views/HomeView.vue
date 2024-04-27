@@ -33,6 +33,7 @@
     </div>
     <!-- cards end -->
   </section>
+  <!-- koniec sekcji services -->
 <section class="work">
   
   <div class="album py-5 bg-body-tertiary">
@@ -70,7 +71,32 @@
       </div>
   </div>
 </section>
-  <!-- koniec sekcji services -->
+
+<section id="contact">
+    <div class="container container-contact">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="services-header">
+              <div class="services-header-content">
+                <hr class="line"> <span>Contact</span> 
+              </div>
+              <h2>Have any project in mind ?</h2>
+              <p>Feel free to contact me or just say friendly hello!</p>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="services-header">
+            
+              <div class="services-header-right-block">
+                <EmailMe/>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+</section>
+
 </template>
 
 <script setup lang="ts">
@@ -80,6 +106,7 @@ import sevicesBlock from "@/components/servicesBlock.vue";
 import SectionServices from "../components/HomeViewComponents/SectionServices.vue";
 import SectionWork from "@/components/HomeViewComponents/SectionWork.vue";
 import SectionContact from "@/components/HomeViewComponents/SectionContact.vue";
+import EmailMe from "@/components/EmailMe.vue";
 
 interface Service {
   title: string;
@@ -234,6 +261,18 @@ const works: Work[] = [
   flex-wrap: wrap;
   width: 100%;
   justify-content: center;
+}
+
+/* contact */
+.container-contact
+.row {
+  align-items: center;
+  padding: 48px 0;
+}
+
+.row
+p {
+  color: var(--gray);
 }
 
 
