@@ -6,13 +6,13 @@
       <div class="row">
         <div class="col-lg-6">
           <div class="services-header">
-            <h2>7+ years experience <br> working</h2>
+            <h2>Celujemy <br>w przyszłość</h2>
           </div>
         </div>
         <div class="col-lg-6">
           <div class="services-header">
             <div class="services-header-content">
-              <hr class="line"> <span>Services</span> 
+              <hr class="line"> <span>Co oferujemy</span> 
             </div>
             <div class="services-description">
               <p>Discover the best services I offer, designed to ensure the success of your project.</p>

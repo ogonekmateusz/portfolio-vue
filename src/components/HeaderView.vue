@@ -1,7 +1,7 @@
 <template>
   <nav class="navbar navbar-expand-md navbar-dark bg-dark p-3" aria-label="Fourth navbar example">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">Alifreza<span>.</span> </a>
+      <a class="navbar-brand" href="#">CodeCarrot<span>.</span> </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -9,22 +9,22 @@
       <div class="collapse navbar-collapse" id="navbarsExample04">
         <ul class="navbar-nav ms-auto mb-2 mb-md-0">
           <li class="nav-item">
-            <RouterLink class="nav-link" to="/">Home</RouterLink>
+            <RouterLink class="nav-link" to="/">Strona Główna</RouterLink>
           </li>
           <li class="nav-item">
-            <RouterLink class="nav-link" to="/">Services</RouterLink>
+            <RouterLink class="nav-link" to="/">Co oferujemy</RouterLink>
           </li>
           <li class="nav-item">
-            <RouterLink class="nav-link" to="/">Work</RouterLink>
+            <RouterLink class="nav-link" to="/">Nasze projekty</RouterLink>
           </li>
           <li class="nav-item">
-            <RouterLink class="nav-link" to="/">About us</RouterLink>
+            <RouterLink class="nav-link" to="/">o nas</RouterLink>
           </li>
           <li class="nav-item">
             <RouterLink class="nav-link " to="/">Blog</RouterLink>
           </li>
           <li class="nav-item border ">
-            <RouterLink class="nav-link last" to="/">Contact</RouterLink>
+            <RouterLink class="nav-link last" to="/">Kontakt</RouterLink>
           </li>
         </ul>
       </div>
