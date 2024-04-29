@@ -1,5 +1,5 @@
 <template>
-  <SectionHero />
+  <SectionHero/>
   <!-- sekcja services -->
   <section class="services ">
     <div class="container">
@@ -42,9 +42,9 @@
           <div class="col-lg-6">
             <div class="services-header">
               <div class="services-header-content">
-                <hr class="line"> <span>Recent work</span> 
+                <hr class="line"> <span>Ostatnie prace</span> 
               </div>
-              <h2>Some of my favorite<br> projects.</h2>
+              <h2>Kilka naszych ostatnich<br> projektów.</h2>
             </div>
           </div>
 
@@ -52,7 +52,7 @@
             <div class="services-header">
             
               <div class="services-header-right-block">
-                <button>View All Project</button>
+                <button>Zobacz wszystkie projekty</button>
               </div>
             </div>
           </div>
@@ -78,10 +78,9 @@
           <div class="col-lg-6">
             <div class="services-header">
               <div class="services-header-content">
-                <hr class="line"> <span>Contact</span> 
+                <hr class="line"> <span>Kontakt</span> 
               </div>
-              <h2>Have any project in mind ?</h2>
-              <p>Feel free to contact me or just say friendly hello!</p>
+              <h2>Jesteś zainteresowany współpracą? </h2>
             </div>
           </div>
 
@@ -118,7 +117,7 @@
 <div class="row">
           <div class="col-lg-6">
             <div class="services-header footer-header">
-              <p>Design and Develop by <a href="/">Michał Zając</a> and <a href="/">Mateusz Ogonek</a></p>
+              <p>Strona stworzona przez <a href="/">Michała Zająca</a> oraz <a href="/">Mateusza Ogonka</a></p>
             </div>
           </div>
 
@@ -165,9 +164,9 @@ const services: Service[] = [
     description: "I offer innovative and attention-grabbing product design services. From initial ideation to implementation"
   },
   {
-    title: "Frontend develop",
-    imgSrc: "icon-2.png",
-    description: "Specialize in responsive and interactive front-end development. With a deep understanding of HTML, CSS, and JS."
+    title: "Frontend",
+    imgSrc: "logo.png",
+    description: "Specjalizujemy się w tworzeniu witryn internetowych od strony Frontendu z dużą znajomością HTML, CSS i JS jak i popularnych JavaScriptowych framework'ow takich jak Vue"
   },
   {
     title: "Brand strategy",
@@ -201,6 +200,7 @@ const works: Work[] = [
 </script>
 
 <style>
+
 .line {
   background-color: var(--primary);
   width: 50px;

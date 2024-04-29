@@ -133,7 +133,7 @@ import { RouterLink } from 'vue-router';
 }
 
 .nav-item:not(:last-child):hover::after {
-  width: 15%;
+  width: 29%;
 }
 
 .nav-item:last-child {

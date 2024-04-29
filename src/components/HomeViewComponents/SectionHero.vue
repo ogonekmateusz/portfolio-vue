@@ -11,7 +11,7 @@
       <div class="col-lg-7 text-center text-lg-start" >
         <div class="hello">CodeCarrot Studio</div>
         <h1 class="display-4 fw-bold lh-1 text-body-emphasis mb-3" >FrontEnd Developers</h1>
-        <p class="col-lg-10 fs-4">CodeCarrot Studio to inicjatywa dwóch uczniów drugiej klasy technikum programistycznego. Tworzymy wysokiej jakości strony internetowe</p>
+        <p class="col-lg-10 fs-4">CodeCarrot Studio to inicjatywa dwóch uczniów technikum programistycznego. Tworzymy wysokiej jakości strony internetowe</p>
         <EmailMe></EmailMe>
       </div>
       <div class="col-md-10 mx-auto col-lg-5">
