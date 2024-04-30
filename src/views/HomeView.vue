@@ -60,8 +60,8 @@
       </div>
     <div class="container-block">
         <SectionWork
-          v-for="work in works"
-          :key="work"
+          v-for="(work,index) in works"
+          :key="index"
           :title="work.title"
           :imgSrc="work.imgSrc"
           :description="work.href"
@@ -140,9 +140,7 @@
 import SectionHero from "../components/HomeViewComponents/SectionHero.vue";
 import sevicesBlock from "@/components/servicesBlock.vue";
 
-import SectionServices from "../components/HomeViewComponents/SectionServices.vue";
 import SectionWork from "@/components/HomeViewComponents/SectionWork.vue";
-import SectionContact from "@/components/HomeViewComponents/SectionContact.vue";
 import EmailMe from "@/components/EmailMe.vue";
 
 interface Service {
@@ -159,18 +157,18 @@ interface Work {
 
 const services: Service[] = [
   {
-    title: "Product Designer",
-    imgSrc: "icon-1.png",
-    description: "I offer innovative and attention-grabbing product design services. From initial ideation to implementation"
+    title: "TypeScript Developers",
+    imgSrc: "ts.png",
+    description: "Mamy doświadczenie w stosowaniu TypeScript w projekcie, co pozwala mi pisać bardziej niezawodny i skalowalny kod JavaScript. Znamy podstawowe typowanie danych jak i zaawansowane takie jak np. interfejsy. Pozwala to na łatwiejsze wyszukiwanie błędów w trakcie tworzenia strony"
   },
   {
-    title: "Frontend",
+    title: "Vue Develepoers",
     imgSrc: "logo.png",
-    description: "Specjalizujemy się w tworzeniu witryn internetowych od strony Frontendu z dużą znajomością HTML, CSS i JS jak i popularnych JavaScriptowych framework'ow takich jak Vue"
+    description: "Posiadamu solidną wiedzę i praktyczne doświadczenie w pracy z Vue.js. Z powodzeniem tworzyliśmy responsywne i reaktywne strony internetowe, wykorzystując Vue w różnych projektach. Zynam zarówno podstawowe jak i zaawansowane koncepty Vue, takie jak komponenty, reaktywność danych oraz routing"
   },
   {
-    title: "Brand strategy",
-    imgSrc: "icon-3.png",
+    title: "React Developers",
+    imgSrc: "react.png",
     description: "I help design strong and captivating brand strategies. Through thorough research and market analysis."
   }
 ];
