@@ -16,19 +16,21 @@
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <form class="d-flex flex-column align-items-center"> 
+                    <form class="d-flex flex-column align-items-center" action="https://formsubmit.io/send/ogonekmateusz69@gmail.com" method="POST"> 
+                        
                         <div class="form-group py-4 w-100"> 
-                            <input type="text" class="form-control input" placeholder="Imię i Nazwisko">
+                            <input type="text" class="form-control input" placeholder="Imię i Nazwisko" name="imieINazwisko">
                         </div>
                         <div class="form-group py-2 w-100"> 
-                            <input type="email" class="form-control input" placeholder="Adres Email">
+                            <input type="email" class="form-control input" placeholder="Adres Email" name="mail">
                         </div>
                         <div class="form-group py-4 w-100"> 
-                            <input type="tel" class="form-control input" placeholder="Numer Telefonu">
+                            <input type="tel" class="form-control input" placeholder="Numer Telefonu"  name="NumerTelefonu">
                         </div>
                         <div class="form-group w-100"> 
-                            <textarea class="form-control" placeholder="Opis"></textarea>
+                            <textarea class="form-control" name="msg" placeholder="Opis"></textarea>
                         </div>         
+                        
                             <button type="submit" class="my-5 btn btn-primary">Zatwierdź</button>                  
                     </form>
                 </div>
