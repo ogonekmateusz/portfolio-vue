@@ -15,7 +15,7 @@
         <EmailMe></EmailMe>
       </div>
       <div class="col-md-10 mx-auto col-lg-5">
-        <!-- <img src="@/assets/loho.png" alt="Logo"> -->
+        <img src="@/assets/loho.png" alt="Logo">
       </div>
     </div>
   </div>
