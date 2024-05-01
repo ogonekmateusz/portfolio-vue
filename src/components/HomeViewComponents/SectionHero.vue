@@ -23,7 +23,7 @@ import 'bootstrap/dist/js/bootstrap.bundle';
   
 </script>
   
-<style scoped>
+<style >
 
 .display-5{
   color: var(--white) !important;
