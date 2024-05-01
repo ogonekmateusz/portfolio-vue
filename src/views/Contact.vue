@@ -143,10 +143,16 @@ const submitForm = async () => {
      border-color: var(--dark) !important;
      color: black !important;
 }
-img{
+img {
     width: 100%;
     height: 50vh;
-    }
+}
 
-   
+@media(max-width:990px) {
+    .contact {
+        margin-top: 2rem;
+    }
+}   
+
+
 </style>
