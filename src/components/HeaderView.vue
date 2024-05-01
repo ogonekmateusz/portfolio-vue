@@ -1,7 +1,8 @@
 <template>
   <nav class="navbar navbar-expand-md navbar-dark bg-dark p-3" aria-label="Fourth navbar example">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">CodeCarrot<span>.</span> </a>
+      <RouterLink to="/" class="navbar-brand">CodeCarrot<span>.</span> </RouterLink>
+      <!-- <a class="navbar-brand" href="#">CodeCarrot<span>.</span> </a> -->
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -20,11 +21,8 @@
           <li class="nav-item">
             <RouterLink class="nav-link" to="/aboutUs">o nas</RouterLink>
           </li>
-          <li class="nav-item">
-            <RouterLink class="nav-link " to="/">Blog</RouterLink>
-          </li>
           <li class="nav-item border ">
-            <RouterLink class="nav-link last" to="/">Kontakt</RouterLink>
+            <RouterLink class="nav-link last" to="/Contact">Kontakt</RouterLink>
           </li>
         </ul>
       </div>

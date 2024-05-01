@@ -62,8 +62,8 @@ img{
     margin-top: 4rem;
   }
     img{
-      width: 100%;
-      height: 50vh;
+      width: 435px;
+      height: 355px;
     }
 }
 </style>
