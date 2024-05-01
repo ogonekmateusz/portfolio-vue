@@ -16,7 +16,7 @@
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <form class="d-flex flex-column align-items-center emailForm"  method="POST" action="https://formspree.io/codecarrot1@gmail.com">
+                    <form class="d-flex flex-column align-items-center emailForm"  method="POST" action="https://formspree.io/f/mpzvbron">
                         <div class="form-group py-4 w-100"> 
                             <input type="text" class="form-control input" placeholder="Imię i Nazwisko" name="imieINazwisko">
                         </div>
