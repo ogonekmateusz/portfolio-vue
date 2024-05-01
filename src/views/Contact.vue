@@ -2,7 +2,7 @@
     <section class="contact">
         <div class="container col-xxl-10 py-5">
             <div class="row d-flex">
-                <div class="col-lg-6 my-3">
+                <div class="col-lg-6 my-3" v-if="!formSubmitted">
                     <div class="services-header">
                         <h2>Czekamy na Twoje pytania!</h2>
                     </div>
@@ -15,33 +15,73 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6">
-                    <form class="d-flex flex-column align-items-center emailForm"  method="POST" action="https://formspree.io/f/mpzvbron">
+                <div class="col-lg-6" v-if="!formSubmitted">
+                    <form class="d-flex flex-column align-items-center emailForm" @submit.prevent="submitForm"> 
                         <div class="form-group py-4 w-100"> 
-                            <input type="text" class="form-control input" placeholder="Imię i Nazwisko" name="imieINazwisko">
+                            <input type="text" class="form-control input" placeholder="Imię i Nazwisko" v-model="imieINazwisko">
                         </div>
                         <div class="form-group py-2 w-100"> 
-                            <input type="email" class="form-control input" placeholder="Adres Email" name="mail">
+                            <input type="email" class="form-control input" placeholder="Adres Email" v-model="mail">
                         </div>
                         <div class="form-group py-4 w-100"> 
-                            <input type="tel" class="form-control input" placeholder="Numer Telefonu"  name="NumerTelefonu">
+                            <input type="tel" class="form-control input" placeholder="Numer Telefonu" v-model="NumerTelefonu">
                         </div>
                         <div class="form-group w-100"> 
-                            <textarea class="form-control" name="msg" placeholder="Opis"></textarea>
+                            <textarea class="form-control" v-model="msg" placeholder="Opis"></textarea>
                         </div>         
-                        
-                            <button type="submit" class="my-5 btn btn-primary">Zatwierdź</button>                  
+                        <button type="submit" class="my-5 btn btn-primary">Zatwierdź</button>                  
                     </form>
+                </div>
+                <div class="col-lg-6" v-else>
+                    <p>Dziękujemy za przesłanie formularza!</p>
                 </div>
             </div>
         </div>
     </section>
 </template>
 
-<script setup lang="ts">
-import 'bootstrap/dist/css/bootstrap.css';
-import 'bootstrap/dist/js/bootstrap.bundle';
+<script setup>
+import { ref } from 'vue';
+
+const formSubmitted = ref(false);
+const imieINazwisko = ref('');
+const mail = ref('');
+const NumerTelefonu = ref('');
+const msg = ref('');
+
+const submitForm = async () => {
+    // Tutaj możesz dodać walidację lub inne operacje przed przesłaniem formularza
+
+    // Przesłanie formularza
+    try {
+        const response = await fetch('https://formspree.io/f/mpzvbron', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                imieINazwisko: imieINazwisko.value,
+                mail: mail.value,
+                NumerTelefonu: NumerTelefonu.value,
+                msg: msg.value
+            })
+        });
+        if (response.ok) {
+            formSubmitted.value = true;
+        } else {
+            // Obsługa błędu
+            console.error('Wystąpił błąd podczas przesyłania formularza.');
+        }
+    } catch (error) {
+        // Obsługa błędu sieciowego
+        console.error('Wystąpił błąd sieciowy podczas przesyłania formularza:', error);
+    }
+};
 </script>
+
+<style scoped>
+/* Styl dla formularza */
+</style>
 
 <style scoped>
 @import url(/src/assets/colors.css);
