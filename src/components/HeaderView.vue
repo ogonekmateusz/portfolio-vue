@@ -19,7 +19,7 @@
             <RouterLink class="nav-link" to="/">Nasze projekty</RouterLink>
           </li>
           <li class="nav-item">
-            <RouterLink class="nav-link" to="/">o nas</RouterLink>
+            <RouterLink class="nav-link" to="/aboutUs">o nas</RouterLink>
           </li>
           <li class="nav-item border ">
             <RouterLink class="nav-link last" to="/Contact">Kontakt</RouterLink>
