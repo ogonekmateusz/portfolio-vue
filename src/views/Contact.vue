@@ -3,20 +3,20 @@
         <div class="container col-xxl-10 py-5">
             <div class="row d-flex">
                 <!-- Formularz -->
-                <div class="col-lg-6 my-3" v-if="!formSubmitted">
+                <div class="col-lg-6 my-3 p-0" v-if="!formSubmitted">
                     <div class="services-header">
                         <h2>Czekamy na Twoje pytania!</h2>
                     </div>
                     <div class="services-header">
                         <div class="services-header-content">
-                            <hr class="line"> <span>Skontaktuj się z nami już dziś!</span> 
+                            <hr class="line"> <span></span> 
                         </div>
                         <div class="services-description">
                             <p>Prześlij nam szczegóły dotyczące Twojego projektu, takie jak oczekiwania, funkcjonalności, terminy i budżet, abyśmy mogli przygotować ofertę i omówić współpracę.</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6" v-if="!formSubmitted">
+                <div class="col-lg-6 px-4" v-if="!formSubmitted">
                     <form class="d-flex flex-column align-items-center emailForm" @submit.prevent="submitForm"> 
                         <div class="form-group py-4 w-100"> 
                             <input type="text" class="form-control input" placeholder="Imię i Nazwisko" v-model="imieINazwisko">
@@ -147,4 +147,6 @@ img{
     width: 100%;
     height: 50vh;
     }
+
+   
 </style>
