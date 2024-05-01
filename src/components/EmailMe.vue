@@ -1,6 +1,6 @@
 <template>
-
-<a href="mailto:michal.zajac996@gmail.com" class="btn btn-primary btn-lg px-4 me-md-2">Napisz do nas</a>
+<router-link to="/Contact" class="btn btn-primary btn-lg px-4 me-md-2">Napisz do nas</router-link>
+<!-- <a href="mailto:michal.zajac996@gmail.com" class="btn btn-primary btn-lg px-4 me-md-2">Napisz do nas</a> -->
 
 </template>
 <script setup lang="ts">
