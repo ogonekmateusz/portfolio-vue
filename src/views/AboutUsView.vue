@@ -24,7 +24,7 @@
         <template v-slot:leftBlock>
         <div class="hello">CodeCarrot Studio</div>
             <h1 class="display-4 fw-bold lh-1 text-body-emphasis mb-3" >Mateusz Ogonek</h1>
-            <p class="col-lg-10 fs-4">CodeCarrot Studio to inicjatywa dwóch uczniów technikum programistycznego. Tworzymy wysokiej jakości strony internetowe</p>
+            <p class="col-lg-10 fs-4">Jestem uczniem technikum o profilu programistycznym, a moją pasją jest tworzenie interfejsów użytkownika oraz programowanie stron internetowych. Mam doświadczenie w pracy z językami takimi jak JavaScript, HTML i CSS, a także w wykorzystywaniu popularnych frameworków jak Vue czy Bootstrap.</p>
         <EmailMe></EmailMe>
     </template>
 
