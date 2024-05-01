@@ -2,6 +2,7 @@
     <section class="contact">
         <div class="container col-xxl-10 py-5">
             <div class="row d-flex">
+                <!-- Formularz -->
                 <div class="col-lg-6 my-3" v-if="!formSubmitted">
                     <div class="services-header">
                         <h2>Czekamy na Twoje pytania!</h2>
@@ -32,8 +33,27 @@
                         <button type="submit" class="my-5 btn btn-primary">Zatwierdź</button>                  
                     </form>
                 </div>
-                <div class="col-lg-6" v-else>
-                    <p>Dziękujemy za przesłanie formularza!</p>
+                
+                <!-- Komunikat po przesłaniu formularza -->
+                <div class="row d-flex align-items-center" v-if="formSubmitted">
+                    <div class="col-lg-6 ">
+                    <div class="services-header">
+                        <h2>Dziękujemy za przesłanie formularza!</h2>
+                    </div>
+                    <div class="services-header">
+                        <div class="services-header-content">
+                            <hr class="line"> <span>Skontaktuj się z nami już dziś!</span> 
+                        </div>
+                        <div class="services-description">
+                            <p>Postaramy się skontaktować z Tobą tak szybko jak będzie to możliwe.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 ">
+                    <img src="@/assets/rabitForm.png" alt="Logo">
+                </div>
+
                 </div>
             </div>
         </div>
@@ -123,6 +143,8 @@ const submitForm = async () => {
      border-color: var(--dark) !important;
      color: black !important;
 }
-
-
+img{
+    width: 100%;
+    height: 50vh;
+    }
 </style>

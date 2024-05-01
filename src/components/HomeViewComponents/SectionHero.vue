@@ -15,7 +15,7 @@
         <EmailMe></EmailMe>
       </div>
       <div class="col-md-10 mx-auto col-lg-5">
-        <img src="@/assets/loho.png" alt="Logo">
+        <!-- <img src="@/assets/loho.png" alt="Logo"> -->
       </div>
     </div>
   </div>
@@ -67,8 +67,8 @@ img{
     margin-top: 4rem;
   }
     img{
-      width: 100%;
-      height: 50vh;
+      width: 435px;
+      height: 355px;
     }
 }
 </style>
