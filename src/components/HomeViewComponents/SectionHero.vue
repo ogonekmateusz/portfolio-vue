@@ -1,24 +1,19 @@
 <template>
-    <!-- <section>
-      <h2>Hello, I'm Alif Reza</h2>
-      <h1>Product Designer</h1>
-      <p></p>
-      <EmailMe class="button"></EmailMe>
-    </section> -->
-
     <div class="container col-xl-10 col-xxl-8 px-4 py-5">
-    <div class="row align-items-center g-lg-5 py-5">
-      <div class="col-lg-7 text-center text-lg-start" >
-        <div class="hello">CodeCarrot Studio</div>
-        <h1 class="display-4 fw-bold lh-1 text-body-emphasis mb-3" >FrontEnd Developers</h1>
-        <p class="col-lg-10 fs-4">CodeCarrot Studio to inicjatywa dwóch uczniów technikum programistycznego. Tworzymy wysokiej jakości strony internetowe</p>
-        <EmailMe></EmailMe>
-      </div>
-      <div class="col-md-10 mx-auto col-lg-5">
-        <img src="@/assets/loho.png" alt="Logo">
+      <div class="row align-items-center g-lg-5 py-5">
+        <div class="col-lg-7 text-center text-lg-start" >
+          <slot name="leftBlock">
+            
+          </slot>
+        </div>
+        <div class="col-md-10 mx-auto col-lg-5">
+          <slot name="rightBlock">
+
+          </slot>
+        </div>
       </div>
     </div>
-  </div>
+    
   </template>
   
 <script lang="ts" setup>
@@ -28,7 +23,7 @@ import 'bootstrap/dist/js/bootstrap.bundle';
   
 </script>
   
-<style scoped>
+<style >
 
 .display-5{
   color: var(--white) !important;
