@@ -1,18 +1,18 @@
 <template>
-  <SectionHero />
+  <SectionHero/>
   <!-- sekcja services -->
   <section class="services ">
     <div class="container">
       <div class="row">
         <div class="col-lg-6">
           <div class="services-header">
-            <h2>7+ years experience <br> working</h2>
+            <h2>Celujemy <br>w przyszłość</h2>
           </div>
         </div>
         <div class="col-lg-6">
           <div class="services-header">
             <div class="services-header-content">
-              <hr class="line"> <span>Services</span> 
+              <hr class="line"> <span>Co oferujemy</span> 
             </div>
             <div class="services-description">
               <p>Discover the best services I offer, designed to ensure the success of your project.</p>
@@ -42,9 +42,9 @@
           <div class="col-lg-6">
             <div class="services-header">
               <div class="services-header-content">
-                <hr class="line"> <span>Recent work</span> 
+                <hr class="line"> <span>Ostatnie prace</span> 
               </div>
-              <h2>Some of my favorite<br> projects.</h2>
+              <h2>Kilka naszych ostatnich<br> projektów.</h2>
             </div>
           </div>
 
@@ -52,7 +52,7 @@
             <div class="services-header">
             
               <div class="services-header-right-block">
-                <button>View All Project</button>
+                <button>Zobacz wszystkie projekty</button>
               </div>
             </div>
           </div>
@@ -60,8 +60,8 @@
       </div>
     <div class="container-block">
         <SectionWork
-          v-for="work in works"
-          :key="work"
+          v-for="(work,index) in works"
+          :key="index"
           :title="work.title"
           :imgSrc="work.imgSrc"
           :description="work.href"
@@ -78,10 +78,9 @@
           <div class="col-lg-6">
             <div class="services-header">
               <div class="services-header-content">
-                <hr class="line"> <span>Contact</span> 
+                <hr class="line"> <span>Kontakt</span> 
               </div>
-              <h2>Have any project in mind ?</h2>
-              <p>Feel free to contact me or just say friendly hello!</p>
+              <h2>Jesteś zainteresowany współpracą? </h2>
             </div>
           </div>
 
@@ -118,7 +117,7 @@
 <div class="row">
           <div class="col-lg-6">
             <div class="services-header footer-header">
-              <p>Design and Develop by <a href="/">Michał Zając</a> and <a href="/">Mateusz Ogonek</a></p>
+              <p>Strona stworzona przez <a href="/">Michała Zająca</a> oraz <a href="/">Mateusza Ogonka</a></p>
             </div>
           </div>
 
@@ -141,9 +140,7 @@
 import SectionHero from "../components/HomeViewComponents/SectionHero.vue";
 import sevicesBlock from "@/components/servicesBlock.vue";
 
-import SectionServices from "../components/HomeViewComponents/SectionServices.vue";
 import SectionWork from "@/components/HomeViewComponents/SectionWork.vue";
-import SectionContact from "@/components/HomeViewComponents/SectionContact.vue";
 import EmailMe from "@/components/EmailMe.vue";
 
 interface Service {
@@ -160,18 +157,18 @@ interface Work {
 
 const services: Service[] = [
   {
-    title: "Product Designer",
-    imgSrc: "icon-1.png",
-    description: "I offer innovative and attention-grabbing product design services. From initial ideation to implementation"
+    title: "TypeScript Developers",
+    imgSrc: "ts.png",
+    description: "Mamy doświadczenie w stosowaniu TypeScript w projekcie, co pozwala mi pisać bardziej niezawodny i skalowalny kod JavaScript. Znamy podstawowe typowanie danych jak i zaawansowane takie jak np. interfejsy. Pozwala to na łatwiejsze wyszukiwanie błędów w trakcie tworzenia strony"
   },
   {
-    title: "Frontend develop",
-    imgSrc: "icon-2.png",
-    description: "Specialize in responsive and interactive front-end development. With a deep understanding of HTML, CSS, and JS."
+    title: "Vue Develepoers",
+    imgSrc: "logo.png",
+    description: "Posiadamu solidną wiedzę i praktyczne doświadczenie w pracy z Vue.js. Z powodzeniem tworzyliśmy responsywne i reaktywne strony internetowe, wykorzystując Vue w różnych projektach. Zynam zarówno podstawowe jak i zaawansowane koncepty Vue, takie jak komponenty, reaktywność danych oraz routing"
   },
   {
-    title: "Brand strategy",
-    imgSrc: "icon-3.png",
+    title: "React Developers",
+    imgSrc: "react.png",
     description: "I help design strong and captivating brand strategies. Through thorough research and market analysis."
   }
 ];
@@ -201,6 +198,7 @@ const works: Work[] = [
 </script>
 
 <style>
+
 .line {
   background-color: var(--primary);
   width: 50px;

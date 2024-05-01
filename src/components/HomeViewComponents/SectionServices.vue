@@ -1,6 +1,6 @@
 <template>
     <div class="box">
-      <img :src="require(`../../assets/${imgSrc}`)" alt="img">
+      <img class="image" :src="require(`../../assets/${imgSrc}`)" alt="img">
       <h3>{{ title }}</h3>
       <p>{{ description }}</p>
       <div class="greenLine"></div>
@@ -17,6 +17,10 @@
   </script>
   
   <style scoped>
+.box>img{
+  width: 50px;
+  height: 47px;
+}
 .box {
     box-sizing: border-box;
     margin: 46px;

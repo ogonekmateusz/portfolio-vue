@@ -22,7 +22,7 @@
           </h3>
             <div class="d-flex justify-content-between align-items-center">
               <div class="btn-group">
-                <a class="link" :href="href">See project
+                <a class="link" :href="href">Zobacz projekt
                   <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
                     <g fill="none" stroke="var(--primary)" stroke-width="1.5" stroke-linejoin="round" stroke-miterlimit="10">
                       <circle class="arrow-icon--circle" cx="16" cy="16" r="15.12"></circle>
