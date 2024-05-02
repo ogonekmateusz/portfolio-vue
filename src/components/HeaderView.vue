@@ -16,7 +16,7 @@
             <RouterLink class="nav-link" to="/">Co oferujemy</RouterLink>
           </li>
           <li class="nav-item">
-            <RouterLink class="nav-link" to="/">Nasze projekty</RouterLink>
+            <RouterLink class="nav-link" to="/Offer">Nasze projekty</RouterLink>
           </li>
           <li class="nav-item">
             <RouterLink class="nav-link" to="/aboutUs">o nas</RouterLink>

@@ -99,5 +99,17 @@
     }
   }
 
+ img {
+        max-width: 80%; /* Maksymalna szerokość obrazu */
+        max-height: 80%; /* Maksymalna wysokość obrazu */
+        object-fit: cover; /* Zachowanie proporcji obrazu */
+    }
+
+    .card-body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  
   </style>
   

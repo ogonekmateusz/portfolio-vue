@@ -2,6 +2,8 @@ import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import AboutUsView from "../views/AboutUsView.vue"
 import ContactView from "../views/Contact.vue"
+import OfferView from '@/views/OfferView.vue'
+
 const routes: Array<RouteRecordRaw> = [
   {
     path: '/',
@@ -17,7 +19,13 @@ const routes: Array<RouteRecordRaw> = [
     path:"/aboutUs",
     name:"aboutUs",
     component: AboutUsView
-    
+
+  },
+  {
+    path:"/Offer",
+    name:"Offer",
+    component: OfferView
+
   }
 ]
 
