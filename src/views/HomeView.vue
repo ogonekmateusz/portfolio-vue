@@ -8,7 +8,7 @@
     </template>
     
     <template v-slot:rightBlock>
-      <img src="@/assets/loho.png" alt="Logo">
+      <img class="logo" src="@/assets/loho.png" alt="Logo">
     </template>
   </SectionHero>
   <!-- sekcja services -->
@@ -328,5 +328,36 @@ p {
     margin-bottom: 10px;
   }
 }
+.display-5{
+  color: var(--white) !important;
+}
+.hello{
+  color: var(--primary);
+  font-size: 38px;
+  font-weight: bold;
+}
+.display-4{
+  color: white !important;
+  font-weight: 800;
 
+  font-size: 4.2rem;
+
+}
+.col-lg-10{
+  color: var(--gray) !important;
+  line-height: 28px !important;
+}
+
+.col-lg-10 {
+  font-size: 1.2rem !important;
+  
+}
+.col-md-10{
+  display: flex;
+  justify-content: center;
+}
+.logo{
+  width: 100%;
+  height: 50vh;
+}
 </style>
