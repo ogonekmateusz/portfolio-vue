@@ -5,23 +5,17 @@
         <div class="col-lg-6">
           <div class="services-header">
             <div class="services-header-content">
-              <hr class="line"> <span>Ostatnie prace</span> 
+              <hr class="line"> <span>Poznaj nasze</span> 
             </div>
-            <h2>Kilka naszych ostatnich<br> projektów.</h2>
+            <h2>Najlepsze projekty</h2>
           </div>
         </div>
-        <div class="col-lg-6">
-          <div class="services-header">
-            <div class="services-header-right-block">
-              <button>Zobacz wszystkie projekty</button>
-            </div>
-          </div>
-        </div>
+        
       </div>
       
     </div>
     
-     <div class="container d-flex flex-wrap ">
+  <div class="container d-flex flex-wrap">
     <OfferVueBlock
       v-for="(work,index) in works"
       :key="index"
@@ -45,6 +39,16 @@ interface Work {
 }
 
 const works: Work[] = [
+  {
+    title: "Przykładowy tytuł",
+    imgSrc: "pytajnik.png",
+    href: "/",
+  },
+  {
+    title: "Przykładowy tytuł",
+    imgSrc: "pytajnik.png",
+    href: "/",
+  },
   {
     title: "Przykładowy tytuł",
     imgSrc: "pytajnik.png",

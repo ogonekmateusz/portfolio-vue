@@ -5,18 +5,16 @@
       <p>{{ description }}</p>
       <div class="greenLine"></div>
     </div>
-  </template>
-  
-  
-  <script lang="ts" setup>
+</template>
+<script lang="ts" setup>
   defineProps<{
     title: string,
     imgSrc: string,
     description: string
   }>()
-  </script>
+</script>
   
-  <style scoped>
+<style scoped>
 .box>img{
   width: 50px;
   height: 47px;

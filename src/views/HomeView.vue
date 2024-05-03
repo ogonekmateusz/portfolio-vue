@@ -339,9 +339,6 @@ p {
 .display-4{
   color: white !important;
   font-weight: 800;
-
-  font-size: 4.2rem;
-
 }
 .col-lg-10{
   color: var(--gray) !important;
