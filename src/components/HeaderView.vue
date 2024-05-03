@@ -2,27 +2,26 @@
   <nav class="navbar navbar-expand-md navbar-dark bg-dark p-3" aria-label="Fourth navbar example">
     <div class="container-fluid">
       <RouterLink to="/" class="navbar-brand">CodeCarrot<span>.</span> </RouterLink>
-      <!-- <a class="navbar-brand" href="#">CodeCarrot<span>.</span> </a> -->
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" @click="toggleNavbar">
         <span class="navbar-toggler-icon"></span>
       </button>
 
-      <div class="collapse navbar-collapse" id="navbarsExample04">
+      <div :class="{'collapse': !navbarOpen, 'navbar-collapse': true}" id="navbarsExample04">
         <ul class="navbar-nav ms-auto mb-2 mb-md-0">
           <li class="nav-item">
-            <RouterLink class="nav-link" to="/">Strona Główna</RouterLink>
+            <RouterLink class="nav-link" to="/" @click.native="closeNavbar">Strona Główna</RouterLink>
           </li>
           <li class="nav-item">
-            <RouterLink class="nav-link" to="/">Co oferujemy</RouterLink>
+            <a href="/#services" class="nav-link" @click="closeNavbar">Co oferujemy</a>
           </li>
           <li class="nav-item">
-            <RouterLink class="nav-link" to="/">Nasze projekty</RouterLink>
+            <RouterLink class="nav-link" to="/Offer" @click.native="closeNavbar">Nasze projekty</RouterLink>
           </li>
           <li class="nav-item">
-            <RouterLink class="nav-link" to="/aboutUs">o nas</RouterLink>
+            <RouterLink class="nav-link" to="/aboutUs" @click.native="closeNavbar">o nas</RouterLink>
           </li>
           <li class="nav-item border ">
-            <RouterLink class="nav-link last" to="/Contact">Kontakt</RouterLink>
+            <RouterLink class="nav-link last" to="/Contact" @click.native="closeNavbar">Kontakt</RouterLink>
           </li>
         </ul>
       </div>
@@ -33,7 +32,19 @@
 <script lang="ts" setup>
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/js/bootstrap.bundle';
-import { RouterLink } from 'vue-router'; 
+import { ref } from 'vue';
+import { RouterLink } from 'vue-router';
+
+const navbarOpen = ref(false);
+
+const toggleNavbar = () => {
+  navbarOpen.value = !navbarOpen.value;
+};
+
+const closeNavbar = () => {
+  navbarOpen.value = false;
+};
+ 
 </script>
   
 <style scoped>

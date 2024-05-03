@@ -25,38 +25,6 @@ import 'bootstrap/dist/js/bootstrap.bundle';
   
 <style >
 
-.display-5{
-  color: var(--white) !important;
-}
-.hello{
-  color: var(--primary);
-  font-size: 38px;
-  font-weight: bold;
-}
-.display-4{
-  color: white !important;
-  font-weight: 800;
-
-  font-size: 4.2rem;
-
-}
-.col-lg-10{
-  color: var(--gray) !important;
-  line-height: 28px !important;
-}
-
-.col-lg-10 {
-  font-size: 1.2rem !important;
-  
-}
-.col-md-10{
-  display: flex;
-  justify-content: center;
-}
-img{
-  width: 120%;
-  height: 50vh;
-}
 @media (max-width: 986px) {
   .col-md-10{
     margin-top: 4rem;
