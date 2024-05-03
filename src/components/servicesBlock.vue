@@ -3,7 +3,7 @@
     <div class="col-lg-4">
       <div class="card">
         <div class="card-body">
-          <img :src="require(`../assets/${props.imgSrc}`)" alt="img">
+          <img class="icon" :src="require(`../assets/${props.imgSrc}`)" alt="img">
           <h5 class="card-title">{{ props.title }}</h5>
           <p class="card-text">{{ props.description }}.</p>
           <div class="greenLine"></div> <!-- Zachowana zielona linia -->
@@ -61,6 +61,12 @@
     .card-text {
       font-size: 0.8rem; /* dostosowano czcionkę dla iPhone SE */
     }
+  }
+  @media(max-width:980px){
+      .icon{
+        width: 50px;
+        height: 47px;
+      }
   }
   </style>
   

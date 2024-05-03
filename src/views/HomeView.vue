@@ -63,7 +63,7 @@
             <div class="services-header">
             
               <div class="services-header-right-block">
-                <button>Zobacz wszystkie projekty</button>
+                <RouterLink class="all-projects" to='/offer'>Zobacz wszystkie projekty</RouterLink>
               </div>
             </div>
           </div>
@@ -170,7 +170,7 @@ const works: Work[] = [
 ];
 </script>
 
-<style>
+<style >
 
 .line {
   background-color: var(--primary);
@@ -190,11 +190,11 @@ const works: Work[] = [
 .services-header-right-block {
   display: flex;
   justify-content: end;
-  button {
+  .all-projects {
     font-size: 14px;
     background-color: transparent;
     font-weight: bold;
-
+    text-decoration: none;
     padding: 10px 16px;
     border: 1px solid var(--primary);
     color: white;
@@ -203,7 +203,7 @@ const works: Work[] = [
     margin-top: 1rem;
   }
 
-  button:hover {
+  .all-projects:hover {
     background-color: var(--primary);
     border-color: var(--lightDark);
     color: var(--lightDark);
