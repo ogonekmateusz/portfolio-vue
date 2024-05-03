@@ -23,7 +23,7 @@ import 'bootstrap/dist/js/bootstrap.bundle';
   
 </script>
   
-<style scoped>
+<style >
 
 @media (max-width: 986px) {
   .col-md-10{
