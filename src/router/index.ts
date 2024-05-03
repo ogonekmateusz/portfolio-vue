@@ -24,7 +24,7 @@ const routes: Array<RouteRecordRaw> = [
   {
     path:"/Offer",
     name:"Offer",
-
+    component:OfferView
   }
 ]
 
