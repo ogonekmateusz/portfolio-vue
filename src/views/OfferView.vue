@@ -5,17 +5,17 @@
         <div class="col-lg-6">
           <div class="services-header">
             <div class="services-header-content">
-              <hr class="line"> <span>Poznaj nasze</span> 
+              <hr class="line"> <span>Zobacz nasze</span> 
             </div>
             <h2>Najlepsze projekty</h2>
           </div>
         </div>
-        
+       
       </div>
       
     </div>
     
-  <div class="container d-flex flex-wrap">
+     <div class="container d-flex flex-wrap ">
     <OfferVueBlock
       v-for="(work,index) in works"
       :key="index"

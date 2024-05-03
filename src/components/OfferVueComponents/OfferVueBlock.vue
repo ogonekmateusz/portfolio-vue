@@ -1,5 +1,5 @@
 <template>
-<div class="card-body mr-1 d-flex flex-column align-items-center w-50">
+<div class="card-body mr-1 d-flex flex-column align-items-center">
   <img :src="require(`../../assets/${imgSrc}`)" alt="Work" :class="imgSrc">
   <h3 class="card-text">
     {{title}}
@@ -73,6 +73,9 @@ color: var(--primary);
     stroke-dashoffset: 0;
   }
 }
+}
+.card-body{
+  width: 33% !important;
 }
 @media (max-width: 991px) {
 .card-body {

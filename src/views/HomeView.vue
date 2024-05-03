@@ -12,7 +12,7 @@
     </template>
   </SectionHero>
   <!-- sekcja services -->
-  <section class="services ">
+  <section class="services" id="services">
     <div class="container">
       <div class="row">
         <div class="col-lg-6">
@@ -33,7 +33,7 @@
       </div>
     </div>
     <!-- cards -->
-    <div class="row m-5">
+    <div class="row m-5" >
       <sevicesBlock
           v-for="(service, index) in services"
           :key="index"
@@ -131,7 +131,7 @@ interface Work {
 const services: Service[] = [
   {
     title: "TypeScript Developers",
-    imgSrc: "ts.png",
+    imgSrc: "ts_2.png",
     description: "Mamy doświadczenie w stosowaniu TypeScript w projekcie, co pozwala mi pisać bardziej niezawodny i skalowalny kod JavaScript. Znamy podstawowe typowanie danych jak i zaawansowane takie jak np. interfejsy. Pozwala to na łatwiejsze wyszukiwanie błędów w trakcie tworzenia strony"
   },
   {
