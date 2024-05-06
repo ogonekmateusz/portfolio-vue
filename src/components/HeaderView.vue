@@ -21,7 +21,7 @@
             <RouterLink class="nav-link" to="/aboutUs" @click.native="closeNavbar">o nas</RouterLink>
           </li>
           <li class="nav-item border ">
-            <RouterLink class="nav-link last" to="/Contact" @click.native="closeNavbar">Kontakt</RouterLink>
+            <RouterLink class="nav-link last" to="/Contact" @click="openForm" @click.native="closeNavbar">Kontakt</RouterLink>
           </li>
         </ul>
       </div>
@@ -34,7 +34,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/js/bootstrap.bundle';
 import { ref } from 'vue';
 import { RouterLink } from 'vue-router';
-
+const emit = defineEmits(['openForm'])
 const navbarOpen = ref(false);
 
 const toggleNavbar = () => {
@@ -44,7 +44,9 @@ const toggleNavbar = () => {
 const closeNavbar = () => {
   navbarOpen.value = false;
 };
- 
+const openForm = ()=>{
+    emit("openForm");
+}
 </script>
   
 <style scoped>

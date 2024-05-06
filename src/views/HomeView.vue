@@ -23,10 +23,10 @@
         <div class="col-lg-6">
           <div class="services-header">
             <div class="services-header-content">
-              <hr class="line"> <span>Co oferujemy</span> 
+              <hr class="line"> <span>Co Potrafimy</span> 
             </div>
             <div class="services-description">
-              <p>Discover the best services I offer, designed to ensure the success of your project.</p>
+              <p>Posiadamy solidną wiedzę na temat nowoczesnych framework'ów frontendowych oraz umiemy z nich korzystać</p>
             </div>
           </div>
         </div>

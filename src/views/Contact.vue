@@ -60,15 +60,14 @@
     </section>
 </template>
 
-<script setup>
+<script lang="ts" setup>
 import { ref } from 'vue';
-
-const formSubmitted = ref(false);
+import { inject } from 'vue';
+const formSubmitted = ref(inject("value"));
 const imieINazwisko = ref('');
 const mail = ref('');
 const NumerTelefonu = ref('');
 const msg = ref('');
-
 const submitForm = async () => {
     // Tutaj możesz dodać walidację lub inne operacje przed przesłaniem formularza
 

@@ -62,7 +62,7 @@
       font-size: 0.8rem; /* dostosowano czcionkę dla iPhone SE */
     }
   }
-  @media(max-width:980px){
+  @media(max-width:987px){
       .icon{
         width: 50px;
         height: 47px;
